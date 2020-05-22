@@ -1,0 +1,36 @@
+.aside {
+  padding-left: 16px;
+  .list_left {
+    height: 1002px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;;
+    .list_left__item {
+      display: block;
+      .list_left__btn {
+        padding-top: 20px;
+        position: relative;
+        .list_left__text {
+          font-family: 'LuciferSans';
+          font-size: 31px;
+          writing-mode: vertical-lr;
+          text-orientation: mixed;
+          text-shadow: 0.2px 0.2px #000000;
+          color: #ffffff;
+          text-transform: uppercase;
+          transition: color 0.3s;
+          transform: rotate(180deg);
+        }
+        &:hover .list_left__text{
+          color: grey
+        }
+        &::after {
+          content: url(../img/Small_arrow.svg);
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
