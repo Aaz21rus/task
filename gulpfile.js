@@ -1,5 +1,7 @@
 const { src, dest, parallel, watch, task, series } = require('gulp')
-const pug = require('gulp-pug')
+// const pug = require('gulp-pug')
+// const gulp = require('gulp');
+// const validator = require('gulp-html');
 const scss = require('gulp-sass')
 const gulplog = require('gulplog')
 const notifier = require('node-notifier')
@@ -16,19 +18,32 @@ console.log(webpackConfig)
 // HTML
 //
 
+// const html = () => {
+//   return gulp.src('html/index.html')
+//     .pipe(validator({
+//       errorHandler: notify.onError(function (err) {
+//         return {
+//           title: 'HTML Error',
+//           message: err.message
+//         }
+//       })
+//     }))
+//     .pipe(gulp.dest('build/'));
+// };
+
 function html() {
-  return src('pug/pages/*.pug')
+  return src('html/*.html')
     .pipe(plumber({
       errorHandler: notify.onError(function (err) {
         return {
-          title: 'Pug Error',
+          title: 'html Error',
           message: err.message
         }
       })
     }))
-    .pipe(pug({
-      pretty: true
-    }))
+    // .pipe(pug({
+    //   pretty: true
+    // }))
     .pipe(dest('build'))
 }
 
@@ -49,7 +64,6 @@ function css() {
       })
     }))
     .pipe(scss())
-    // .pipe(minifyCSS())
     .pipe(autoprefixer({ cascade: false }))
     .pipe(dest('build/css'))
 }
@@ -103,11 +117,10 @@ function copyFonts() {
 //
 
 task('watcher', _=> {
-  watch('pug/**/*.pug', series(html))
+  watch('html/**/*.html', series(html))
   watch('scss/**/*.scss', series(css))
   watch('img/**/*.{jpg,jpeg,gif,png,svg}', series(copyImg))
   watch('fonts/*.*', series(copyFonts))
-  // watch('js/**/*.js', series(js))
 })
 
 
