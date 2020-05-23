@@ -1,5 +1,10 @@
 .aside {
-  padding-left: 16px;
+  padding-top: 90px;
+  display: flex;
+  justify-content: flex-end;
+  width: 60px;
+  flex-shrink: 0;
+  margin-right: 100px;
   .list_left {
     height: 1002px;
     display: flex;

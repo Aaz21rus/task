@@ -1,0 +1,155 @@
+  .intro {
+    padding-top: 93px;
+    width: 100%;
+    // position: relative;
+    .intro__container {
+      display: flex;
+      .intro__tittle {
+        .intro__logo {
+        font-family: 'LuciferSansSemiCondensed';
+        font-size: 400px;
+        line-height: 300px;
+        text-transform: uppercase;
+        color: #93845B;
+        position: relative;
+        z-index: 1;
+        }
+        .intro__logo-name {
+          left: 370px;
+        }
+        .intro__logo-surname {
+          top: 367px;
+          right: 122px;
+          z-index: 4;
+          .intro__logo-letterE {
+          // position: relative;
+          display: inline-block;
+          transform: rotate(-28deg);
+          // top: -63px;
+          // right: 17px;
+          }
+          .intro__logo-letterN {
+          // position: relative;
+          display: inline-block;
+          // left: 1653px;
+          // top: -851px;
+          transform: rotate(-64deg);
+          }
+        }
+      }
+      .intro__photo {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        right: 1784px;
+        top: 4px;
+        .intro__about {
+          .intro__model_face {
+            // position: relative;
+            // left: 154px;
+          }
+          .intro__text {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 114px;
+            .intro__info {
+              .info__item {
+                .info__prof {
+                  font-family: 'LuciferSansSemiCondensed';
+                  // font-size: 16px;
+                  // line-height: 21px;
+                  text-transform: uppercase;
+                }
+                .info__name {
+                  font-family: 'LuciferSansSemiCondensed';
+                  font-size: 16px;
+                  line-height: 21px;
+                  text-transform: uppercase;
+                  color: gray;
+                }
+                margin-bottom: 25px;
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+            .example {
+              position: relative;
+              bottom: 223px;
+              right: 45px;
+              z-index: 3;
+              .example__btn {
+                    position: relative;
+                    bottom: 20px;
+                    left: 20px;
+              }
+            }
+          }
+        }
+        .intro__photo_text {
+          .intro__text {
+            display: flex;
+            position: relative;
+            left: 358px;  
+            top: 202px;
+            z-index: 1;
+            .intro__city {
+              font-size: 21px;
+              text-transform: uppercase;
+            }
+            .intro__year {
+              position: relative;
+              bottom: 17px;
+              right: 5px;
+              font-size: 16px;
+              text-transform: uppercase;
+              color: #93845B;
+            }
+          }
+          .intro__model_full_length {
+            position: relative;
+            top: 197px;
+            right: 101px;
+            z-index: 2;
+          }
+        }
+        .intro__model__street {
+          position: relative;
+          right: 319px;
+          bottom: 86px;
+        }
+      }
+    }
+    .intro__collection {
+      position: relative;
+      left: 679px;
+      bottom: 49px;
+      width: 250px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .intro__line {
+        position: relative;
+         bottom: 25px;
+        z-index: 2;
+        .intro__vertical_line {
+          width: 2px;
+          height: 40px;
+          background: #000000;
+        }
+        .intro__vertical_line-white {
+          background: #ffffff;
+        }
+      }
+      .intro__collection_text {
+        display: inline-block;
+        font-family:'LuciferSansSemiCondensed';
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+

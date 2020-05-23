@@ -1,0 +1,35 @@
+.career {
+  display: flex;
+  align-items: flex-start;
+  .career__desc {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .career__tv {
+      height: 1198px;
+      font-family: 'LuciferSansSemiCondensed';
+      font-size: 150px;
+      line-height: 130px;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      .career__school {
+        color: grey;
+      }
+    }
+    .example {
+      .example__photo {}
+      .example__desc {
+          .example__title {
+            .example__name {}
+            .example__btn {}
+          }
+          .example__text {}
+      }
+    }
+  }
+  .example_big {
+    width: 695px;
+    height: 499px;
+  }
+}

@@ -4,8 +4,13 @@
 //components
 // @import 'components/headings';
 // @import 'components/buttons';
+@import 'components/example';
 @import 'components/header.scss';
-@import 'components/sidebar.scss';
-
-//pages
-@import 'components/main';
+.main__container {
+  display: flex;
+  @import 'components/sidebar.scss';
+  .section__container {
+    @import 'components/intro';
+    @import 'components/career';
+  }
+}
