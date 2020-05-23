@@ -9,6 +9,7 @@
       text-transform: uppercase;
       color: #93845B;
       position: relative;
+      z-index: 1;
     }
     .intro__logo-name {
       top: -120px;
@@ -17,6 +18,7 @@
     .intro__logo-surname {
       top: 21px;
       right: 19px;
+      z-index: 4;
       .intro__logo-letterE {
       position: relative;
       display: inline-block;
@@ -34,13 +36,20 @@
     }
     .intro__photo {
       display: flex;
+      align-items: flex-start;
+      position: relative;
+      bottom: 1593px;
       .intro__about {
         .intro__model_face {
-
+          position: relative;
+          left: 154px;
         }
         .intro__text {
           display: flex;
           justify-content: space-between;
+          position: relative;
+          left: 153px;
+          top: 116px;
           .intro__info {
             .info__item {
               .info__prof {
@@ -64,9 +73,13 @@
           }
           .example {
             display: flex;
-            padding: 30px;
+            padding: 28px;
             border: 1px solid #000000;
             background: #F7F7F7;
+            position: relative;
+            right: 44px;
+            bottom: 227px;
+            z-index: 3;
             .example__photo {
               margin-right: 30px;
             }
@@ -81,7 +94,7 @@
                   width: 175px;
                   font-family: 'LuciferSansSemiCondensed';
                   font-size: 15px;
-                  line-height: 21px;
+                  line-height: 13px;
                   color: #B0B0B0;
                 }
                 .example__btn {
@@ -90,6 +103,9 @@
                   background-image: url(/img/Big_arrow.svg);
                   background-repeat: no-repeat;
                   background-position: center;
+                  position: relative;
+                  bottom: 20px;
+                  left: 20px;
                 }
               }
               .example__text {
@@ -106,6 +122,10 @@
       .intro__photo_text {
         .intro__text {
           display: flex;
+          position: relative;
+          z-index: 1;
+          left: 511px;
+          top: 203px;
           .intro__city {
             font-size: 21px;
             text-transform: uppercase;
@@ -116,20 +136,40 @@
             color: #93845B;
           }
         }
+        .intro__model_full_length {
+          left: 50px;
+          top: 200px;
+          position: relative;
+          z-index: 2;
+        }
       }
       .intro__model__street {
+        position: relative;
+        bottom: 87px;
+        right: 170px;
       }
     }
     .intro__collection {
-      width: 242px;
+      position: relative;
+      bottom: 1647px;
+      right: 53px;
+      width: 250px;
       margin: 0 auto;
       display: flex;
       align-items: center;
       flex-direction: column;
-      .intro__vertical_line {
-        width: 2px;
-        height: 40px;
-        background: #000000;
+      .intro__line {
+        position: relative;
+        bottom: 28px;
+        z-index: 2;
+        .intro__vertical_line {
+          width: 2px;
+          height: 40px;
+          background: #000000;
+        }
+        .intro__vertical_line-white {
+          background: #ffffff;
+        }
       }
       .intro__collection_text {
         display: inline-block;
