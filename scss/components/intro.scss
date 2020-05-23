@@ -3,45 +3,72 @@
     width: 100%;
     // position: relative;
     .intro__container {
+      position: relative;
+      left: 100px;
       display: flex;
-      .intro__tittle {
-        .intro__logo {
-        font-family: 'LuciferSansSemiCondensed';
-        font-size: 400px;
-        line-height: 300px;
-        text-transform: uppercase;
-        color: #93845B;
-        position: relative;
-        z-index: 1;
+      // .intro__tittle {
+      .intro__logo {
+      font-family: 'LuciferSansSemiCondensed';
+      font-size: 400px;
+      line-height: 300px;
+      text-transform: uppercase;
+      color: #93845B;
+      position: relative;
+      z-index: 1;
+      position: absolute;
+        .fade6 {
+          offset-path: path('M500,0');
+          animation: move 3000ms alternate ease-in-out;
         }
-        .intro__logo-name {
-          left: 370px;
-        }
-        .intro__logo-surname {
-          top: 367px;
-          right: 122px;
-          z-index: 4;
-          .intro__logo-letterE {
-          // position: relative;
-          display: inline-block;
-          transform: rotate(-28deg);
-          // top: -63px;
-          // right: 17px;
+        @keyframes move {
+          0% {
+            offset-distance: 0%;
           }
-          .intro__logo-letterN {
-          // position: relative;
-          display: inline-block;
-          // left: 1653px;
-          // top: -851px;
-          transform: rotate(-64deg);
+          100% {
+            offset-distance: 100%;
           }
         }
       }
+      span {
+        position: absolute;
+        transition: transform 0.5s ease;
+        display: inline-block;
+        transform: translateX(0px);
+      }
+      .fade {
+        transform: translateX(0px);
+      }
+
+
+      .intro__logo-name {
+        // left: 370px;
+      }
+      .intro__logo-surname {
+        bottom: 500px;
+        // top: 367px;
+        // right: 122px;
+        z-index: 4;
+        .intro__logo-letterE {
+        // position: relative;
+        display: inline-block;
+        transform: rotate(-28deg);
+        // top: -63px;
+        // right: 17px;
+        }
+        .intro__logo-letterN {
+        // position: relative;
+        display: inline-block;
+        // left: 1653px;
+        // top: -851px;
+        transform: rotate(-64deg);
+        }
+      }
+      // }
       .intro__photo {
         display: flex;
         align-items: flex-start;
         position: relative;
-        right: 1784px;
+        right: 50px;
         top: 4px;
         .intro__about {
           .intro__model_face {
@@ -91,7 +118,7 @@
           .intro__text {
             display: flex;
             position: relative;
-            left: 358px;  
+            left: 358px;
             top: 202px;
             z-index: 1;
             .intro__city {
