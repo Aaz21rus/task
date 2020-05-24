@@ -1,6 +1,8 @@
 const word1 = document.querySelector('.intro__logo-name')
 const word2 = document.querySelector('.intro__logo-surname')
 
+word1.classList.add('fade')
+
 const strWord2 = word2.textContent
 const splitText = strWord2.split('')
 console.log(splitText)
@@ -10,19 +12,17 @@ for(let i=0; i < splitText.length; i++) {
   word2.innerHTML += '<span>' + splitText[i] + '</span>'
 }
 
-let char = 0
+let char = splitText.length - 1
+
 let timer = setInterval(onTick, 50)
-
-
 
 function onTick() {
   const span = word2.querySelectorAll('span')[char]
-  let classAnimation = 'fade' + char
-  // console.log(classAnimation);
-
-  span.classList.add(classAnimation)
-  char++
-  if (char === splitText.length) {
+  // let classAnimation = 'fade' + char
+  
+  span.classList.add('fade_surname')
+  char--
+  if (char === -1) {
     complete()
     return
   }

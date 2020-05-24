@@ -9,14 +9,22 @@ body {
   transition: all 0.3s;
   font-family: 'LuciferSans';
   overflow-x: hidden;
+  background: #F2F2F2;
 }
 
 .container {
   display: flex;
   margin: 0 auto;
   max-width: 1920px;
-  background: #F2F2F2;
+  @media (max-width: 1919px) {
+    max-width: 1200px;
+  }
+  @media (max-width: 992px) {
+    max-width: 960px;
+  }
 }
+
+
 
 a {
   color: inherit;

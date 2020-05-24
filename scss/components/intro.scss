@@ -1,91 +1,89 @@
   .intro {
     padding-top: 93px;
     width: 100%;
-    // position: relative;
+    @media (max-width: 1919px) {
+      padding-top: 0;
+    }
     .intro__container {
       position: relative;
-      left: 100px;
       display: flex;
-      // .intro__tittle {
       .intro__logo {
-      font-family: 'LuciferSansSemiCondensed';
-      font-size: 400px;
-      line-height: 300px;
-      text-transform: uppercase;
-      color: #93845B;
-      position: relative;
-      z-index: 1;
-      position: absolute;
-        .fade6 {
-          offset-path: path('M500,0');
-          animation: move 3000ms alternate ease-in-out;
-        }
-        @keyframes move {
-          0% {
-            offset-distance: 0%;
-          }
-          100% {
-            offset-distance: 100%;
-          }
+        font-family: 'LuciferSansSemiCondensed';
+        font-size: 400px;
+        line-height: 300px;
+        text-transform: uppercase;
+        color: #93845B;
+        position: relative;
+        z-index: 1;
+        position: absolute;
+        @media (max-width: 1919px) {
+          font-size: 250px;
+          line-height: 188px;
         }
       }
       span {
-        position: absolute;
-        transition: transform 0.5s ease;
+        opacity: 0;
+        transition: transform 1s;
         display: inline-block;
-        transform: translateX(0px);
+        transform: translateX(-2010px);
+      }
+      .fade_surname {
+        opacity: 1;
+        transform: translateX(-123px);
+        @media (max-width: 1919px) {
+          transform: translateX(-15px);
+        }
+      }   
+      .intro__logo-name {
+        opacity: 0;
+        transition: transform 2s ease;
+        transform: translateX(2000px);
+        left: 371px;
+        top: -2px;
+        @media (max-width: 1919px) {
+          left: 261px;
+          top: 38px;
+        }
       }
       .fade {
+        opacity: 1;
         transform: translateX(0px);
       }
-
-
-      .intro__logo-name {
-        // left: 370px;
-      }
       .intro__logo-surname {
-        bottom: 500px;
-        // top: 367px;
-        // right: 122px;
+        bottom: 362px;
         z-index: 4;
-        .intro__logo-letterE {
-        // position: relative;
-        display: inline-block;
-        transform: rotate(-28deg);
-        // top: -63px;
-        // right: 17px;
-        }
-        .intro__logo-letterN {
-        // position: relative;
-        display: inline-block;
-        // left: 1653px;
-        // top: -851px;
-        transform: rotate(-64deg);
+        @media (max-width: 1919px) {
+          bottom: 237px;
         }
       }
-      // }
       .intro__photo {
         display: flex;
         align-items: flex-start;
         position: relative;
-        right: 50px;
+        right: -51px;
         top: 4px;
         .intro__about {
           .intro__model_face {
-            // position: relative;
-            // left: 154px;
+            @media (max-width: 1919px) {
+              width: 500px;
+            }
           }
           .intro__text {
             display: flex;
             justify-content: space-between;
             position: relative;
             top: 114px;
+            @media (max-width: 1919px) {
+              top: 71px
+            }
             .intro__info {
+              @media (max-width: 1919px) {
+                position: relative;
+                top: 38px;
+              }
               .info__item {
                 .info__prof {
                   font-family: 'LuciferSansSemiCondensed';
-                  // font-size: 16px;
-                  // line-height: 21px;
                   text-transform: uppercase;
                 }
                 .info__name {
@@ -101,15 +99,29 @@
                 }
               }
             }
-            .example {
+            .intro__example {
               position: relative;
-              bottom: 223px;
-              right: 45px;
+              bottom: 222px;
+              right: 47px;
               z-index: 3;
+              @media (max-width: 1919px) {
+                padding: 23px 20px 29px 20px;
+                bottom: 116px;
+                right: 10px;
+              }
+              .example__photo {
+                @media (max-width: 1919px) {
+                  width: 100px;
+                  margin-right: 10px;
+                }
+              }
               .example__btn {
-                    position: relative;
-                    bottom: 20px;
-                    left: 20px;
+                position: relative;
+                bottom: 20px;
+                left: 20px;
+                @media (max-width: 1919px) {
+                  left: 14px;
+                } 
               }
             }
           }
@@ -121,6 +133,9 @@
             left: 358px;
             top: 202px;
             z-index: 1;
+            @media (max-width: 1919px) {
+              left: 211px;
+            }
             .intro__city {
               font-size: 21px;
               text-transform: uppercase;
@@ -139,26 +154,39 @@
             top: 197px;
             right: 101px;
             z-index: 2;
+            @media (max-width: 1919px) {
+              width: 500px;
+              right: 80px;
+            }
           }
         }
         .intro__model__street {
           position: relative;
           right: 319px;
           bottom: 86px;
+          @media (max-width: 1919px) {
+            width: 240px;
+            right: 217px;
+            bottom: -4px;
+          }
         }
       }
     }
     .intro__collection {
       position: relative;
-      left: 679px;
+      left: 677px;
       bottom: 49px;
       width: 250px;
       display: flex;
       align-items: center;
       flex-direction: column;
+      @media (max-width: 1919px) {
+        bottom: -22px;
+        left: 433px;
+      }
       .intro__line {
         position: relative;
-         bottom: 25px;
+        bottom: 25px;
         z-index: 2;
         .intro__vertical_line {
           width: 2px;

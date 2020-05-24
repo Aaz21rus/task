@@ -27,6 +27,7 @@
         background-image: url(/img/Big_arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
+        transition: transform 0.3s;
         &:hover {
           transform: scale(1.3);
         }

@@ -1,6 +1,5 @@
 .header__container {
   padding: 0 30px;
-  // margin-bottom: 93px;
   .menu {
     width: 100%;
     .menu__list {
@@ -11,7 +10,6 @@
       .menu__item {
         font-family: 'LuciferSans';
         font-size: 21px;
-        // line-height: 110px;
         text-transform: uppercase;
         transition: transform 0.3s ease-in-out;
         &:hover {
