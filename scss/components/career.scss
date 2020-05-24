@@ -9,6 +9,9 @@
     background-size: contain;
     background-position: 105px top;
   }
+  @media (max-width: 1199px) {
+    background-position: -45px top;
+  }
   .career__desc {
     flex-shrink: 0;
     display: flex;
@@ -29,6 +32,11 @@
       .career__school {
         color: grey;
       }
+      @media (max-width: 1199px) {
+        position: relative;
+        right: 50px;
+      }
+
       @media (max-width: 1919px) {
         font-size: 94px;
         line-height: 81px;
@@ -49,7 +57,7 @@
       .example__photo {
         margin-right: 21px;
       }
-      .example__desc {    
+      .example__desc {
         .example__title {
           .example__name {}
           .example__btn {
@@ -88,6 +96,10 @@
       right: 138px;
       top: 302px;
     }
+    @media (max-width: 1199px) {
+      height: 256px;
+      top: 350px;
+    }
     .example_big__name {
       @media (max-width: 1919px) {
         font-size: 21px;
@@ -109,7 +121,11 @@
         position: relative;
         left: 294px;
         width: 500px;
-      } 
+      }
+      @media (max-width: 1199px) {
+        left: 172px;
+        width: 470px;
+      }
     }
     .career__title {
       font-family: 'LuciferSansSemiCondensed';
@@ -124,7 +140,12 @@
         font-size: 150px;
         line-height: 118px;
         left: 330px;
-      } 
+      }
+      @media (max-width: 1199px) {
+        font-size: 124px;
+        line-height: 96px;
+        left: 202px;
+      }
     }
   }
 }

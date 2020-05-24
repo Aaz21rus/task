@@ -28,15 +28,16 @@
           text-transform: uppercase;
           transition: color 0.3s;
           transform: rotate(180deg);
-        }
-        &:hover .list_left__text{
-          color: grey
-        }
-        &::after {
-          content: url(../img/Small_arrow.svg);
-          position: absolute;
-          right: 0;
-          top: 0;
+          &:hover {
+            color: grey
+          }
+          &::after {
+            content: url(../img/Small_arrow.svg);
+            position: absolute;
+            right: 9px;
+            bottom: -17px;
+            transform: rotate(180deg);
+          }
         }
       }
     }

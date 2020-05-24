@@ -29,11 +29,11 @@
       }
       .fade_surname {
         opacity: 1;
-        transform: translateX(-123px);
+        transform: translateX(-72px);
         @media (max-width: 1919px) {
           transform: translateX(-15px);
         }
-      }   
+      }
       .intro__logo-name {
         opacity: 0;
         transition: transform 2s ease;
@@ -43,6 +43,10 @@
         @media (max-width: 1919px) {
           left: 261px;
           top: 38px;
+        }
+        @media (max-width: 1199px) {
+          font-size: 195px;
+          line-height: 157px;
         }
       }
       .fade {
@@ -55,6 +59,10 @@
         @media (max-width: 1919px) {
           bottom: 237px;
         }
+        @media (max-width: 1199px) {
+          font-size: 195px;
+          line-height: 157px;
+        }
       }
       .intro__photo {
         display: flex;
@@ -62,10 +70,16 @@
         position: relative;
         right: -51px;
         top: 4px;
+        @media (max-width: 1199px) {
+          right: -17px;
+        }
         .intro__about {
           .intro__model_face {
             @media (max-width: 1919px) {
               width: 500px;
+            }
+            @media (max-width: 1199px) {
+              width: 413px;
             }
           }
           .intro__text {
@@ -121,7 +135,15 @@
                 left: 20px;
                 @media (max-width: 1919px) {
                   left: 14px;
-                } 
+                }
+              }
+              .example__text {
+                @media (max-width: 1199px) {
+                  max-width: 960px;
+                  width: 207px;
+                  font-size: 14px;
+                  line-height: 16px;
+                }
               }
             }
           }
@@ -158,6 +180,10 @@
               width: 500px;
               right: 80px;
             }
+            @media (max-width: 1199px) {
+              width: 413px;
+              right: 165px;
+            }
           }
         }
         .intro__model__street {
@@ -168,6 +194,10 @@
             width: 240px;
             right: 217px;
             bottom: -4px;
+          }
+          @media (max-width: 1199px) {
+            width: 198px;
+            right: 300px;
           }
         }
       }
@@ -183,6 +213,10 @@
       @media (max-width: 1919px) {
         bottom: -22px;
         left: 433px;
+      }
+      @media (max-width: 1199px) {
+        max-width: 960px;
+        left: 287px;
       }
       .intro__line {
         position: relative;
