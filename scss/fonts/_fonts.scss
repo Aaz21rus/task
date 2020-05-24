@@ -2,12 +2,18 @@
   font-family: 'LuciferSans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Lucifer Sans Thin.otf') format('opentype')
+  src:
+      
+      url('../fonts/Lucifer Sans Thin.otf') format('opentype'),
+      url('../fonts/Lucifer Sans Black.otf') format('opentype')
 }
 
 @font-face {
   font-family: 'LuciferSansSemiCondensed';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/LuciferSansCondensedBlack.otf') format('opentype')
+  src: 
+      local("../fonts"),
+      url('../fonts/LuciferSansCondensedBlack.otf') format('opentype'),
+      url('../fonts/Lucifer Sans SemiCnd Thin.otf') format('opentype'),
 }
