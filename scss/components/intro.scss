@@ -21,7 +21,7 @@
           line-height: 188px;
         }
       }
-      span {
+      tspan {
         opacity: 0;
         transition: transform 1s;
         display: inline-block;
@@ -63,6 +63,18 @@
           font-size: 195px;
           line-height: 157px;
         }
+      }
+      #intro__surname {
+        position: absolute;
+        z-index: 4;
+        bottom: 355px;
+      }
+      #intro__Logo-surname {
+        font-family: 'LuciferSansSemiCondensed';
+        font-size: 400px;
+        line-height: 300px;
+        text-transform: uppercase;
+        fill: #93845B;
       }
       .intro__photo {
         display: flex;

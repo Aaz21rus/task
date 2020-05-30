@@ -1,34 +1,47 @@
-const word1 = document.querySelector('.intro__logo-name')
-const word2 = document.querySelector('.intro__logo-surname')
+const word1 = document.querySelector( '.intro__logo-name' )
+const word2 = document.querySelector( '.intro__logo-surname' )
 
-word1.classList.add('fade')
+word1.classList.add( 'fade' )
 
-const strWord2 = word2.textContent
-const splitText = strWord2.split('')
-console.log(splitText)
+const textPath = document.querySelector( '#intro__Logo-surname' )
 
-word2.textContent = ''
-for(let i=0; i < splitText.length; i++) {
-  word2.innerHTML += '<span>' + splitText[i] + '</span>'
+// const path = document.querySelector(textPath.getAttribute( 'href' ))
+
+// const pathLength = path.getTotalLength()
+// console.log(pathLength)
+
+function updateTextPathOffset( offset ) {
+  textPath.setAttribute( 'startOffset', offset )
 }
+// -pathLength
+setInterval( updateTextPathOffset(0), 2000 )
 
-let char = splitText.length - 1
+// const strWord2 = word2.textContent
+// const splitText = strWord2.split('')
+// console.log(splitText)
 
-let timer = setInterval(onTick, 50)
+// word2.textContent = ''
+// for(let i=0; i < splitText.length; i++) {
+//   word2.innerHTML += '<tspan>' + splitText[i] + '</tspan>'
+// }
 
-function onTick() {
-  const span = word2.querySelectorAll('span')[char]
-  // let classAnimation = 'fade' + char
-  
-  span.classList.add('fade_surname')
-  char--
-  if (char === -1) {
-    complete()
-    return
-  }
-}
+// let char = splitText.length - 1
 
-function complete() {
-  clearInterval(timer)
-  timer = null
-}
+// let timer = setInterval(onTick, 50)
+
+// function onTick() {
+//   const span = word2.querySelectorAll('tspan')[char]
+//   // let classAnimation = 'fade' + char
+
+//   span.classList.add('fade_surname')
+//   char--
+//   if (char === -1) {
+//     complete()
+//     return
+//   }
+// }
+
+// function complete() {
+//   clearInterval(timer)
+//   timer = null
+// }
