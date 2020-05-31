@@ -10,11 +10,22 @@ const textPath = document.querySelector( '#intro__Logo-surname' )
 // const pathLength = path.getTotalLength()
 // console.log(pathLength)
 
+const startOffset = textPath.getAttribute( 'startOffset' )
+console.log(startOffset)
+
+
 function updateTextPathOffset( offset ) {
   textPath.setAttribute( 'startOffset', offset )
 }
+
+for (let i = startOffset; i < 0; i++) {
+  // console.log(i);
+
+  setTimeout( updateTextPathOffset(i), 100 )
+}
+
 // -pathLength
-setInterval( updateTextPathOffset(0), 2000 )
+// setInterval( updateTextPathOffset(0), 2000 )
 
 // const strWord2 = word2.textContent
 // const splitText = strWord2.split('')
